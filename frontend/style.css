@@ -1,0 +1,317 @@
+/* ================================
+   GLOBAL STYLES (Dark Theme)
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #000; /* black background */
+    color: #f1f1f1;  /* light text */
+}
+
+/* ================================
+   HEADER & NAVBAR
+================================ */
+header {
+    background: #0d1b2a;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00b4d8;
+}
+
+/* ================================
+   HOME SECTION
+================================ */
+.home-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1b263b;
+    color: #fff;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00b4d8;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0077b6;
+}
+
+/* ================================
+   SOCIAL LINKS
+================================ */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #00b4d8;
+}
+
+/* ================================
+   SECTIONS (About, Skills, etc.)
+================================ */
+section {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    color: #e0e0e0;
+    background: transparent;
+}
+
+h2 {
+    text-align: center;
+    color: #00b4d8;
+    margin-bottom: 20px;
+}
+
+/* ================================
+   SKILLS
+================================ */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list li {
+    background: #0077b6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* ================================
+   EDUCATION & PROJECTS
+================================ */
+.edu-item, .project {
+    margin-bottom: 20px;
+}
+
+/* ================================
+   CONTACT LINKS
+================================ */
+.contact-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 10px;
+    color: #00b4d8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: #48cae4;
+}
+
+/* ================================
+   REVIEW PAGE (review.html)
+================================ */
+#review-page {
+  padding: 50px 20px;
+  max-width: 700px;
+  margin: 50px auto;
+  background: #111;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  color: #eee;
+}
+
+#review-page h2 {
+  text-align: center;
+  color: #00b4d8;
+  margin-bottom: 20px;
+}
+
+#reviewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#reviewForm input,
+#reviewForm textarea {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #000;
+  color: #fff;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: #444;
+  transition: color 0.2s;
+}
+
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffca28;
+}
+
+#reviewForm .btn {
+  width: fit-content;
+  align-self: center;
+  padding: 10px 25px;
+  background: #00b4d8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#reviewForm .btn:hover {
+  background: #0096c7;
+}
+
+/* ================================
+   GIVE REVIEW SECTION (on main page)
+================================ */
+#give-review {
+  background: #0d1b2a;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 80px 20px;
+  border-top: 2px solid #00b4d8;
+}
+
+#give-review h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #00b4d8;
+}
+
+#give-review p {
+  color: #ccc;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.review-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #00b4d8;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+}
+
+.review-btn:hover {
+  background: #0096c7;
+  transform: scale(1.05);
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    background: #000;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    #give-review h2 {
+        font-size: 1.5rem;
+    }
+}
